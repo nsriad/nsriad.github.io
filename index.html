@@ -16,6 +16,12 @@
             color: #333;
         }
 
+	header {
+            background-color: #5C6BC0;
+            padding: 10px;
+            text-align: center;
+        }
+
         main {
             display: flex;
             max-width: 800px;
@@ -25,6 +31,26 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+	.navbar {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            background-color: #3949AB;
         }
 
         .page-title {
@@ -144,6 +170,16 @@
 </head>
 
 <body>
+ 	<header>
+        <nav class="navbar">
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#publication">Publication</a>
+            <a href="#awards">Awards</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
     <main>
         <div class="page-title">Personal Overview</div>
