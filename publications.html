@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Conference Papers</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 10;
+            padding: 10;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded corners */
+        }
+
+.page-title {
+	    flex: 100%;
+            text-align: center; /* Center-align the title */
+            padding: 20px;
+	    font-size: 24px;
+            background-color: #5C6BC0; /* Accent color */
+            color: #fff; /* White text color */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .page-title:hover {
+            background-color: #3949AB; /* Darker shade on hover */
+        }
+
+        section {
+            margin-bottom: 0px;
+        }
+        .paper-hcard {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 5px 5px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .paper-hcard:hover {
+            transform: scale(1.01);
+        }
+
+        .paper-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .paper-card:hover {
+            transform: scale(1.01);
+        }
+        .page-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+
+        .paper-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .paper-authors {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 8px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .paper-conference {
+            color: #333;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .paper-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #007BFF;
+            margin-top: 8px;
+
+        }
+        a:hover {
+        color: red;
+        transform: scale(1.02);        
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+<div class="page-title"> International Conference Papers </div>
+        <section>
+            <div class="paper-card">
+                <div class="paper-title">An Adaptive System for Detecting Driving Abnormality of Individual Drivers Using Gaussian Mixture Model</div>
+                <div class="paper-authors"><b>M. N. Shakib</b>, M. Shamim, M. N. H. Shawon, M. K. F. Isha, M. Hashem, and M. Kamal</div>
+                <div class="paper-conference">2021 5th International Conference on Electrical Engineering and Information Communication Technology (ICEEICT), IEEE, 2021, pp. 1–6.</div>
+                <a href="https://ieeexplore.ieee.org/document/9667850/" class="paper-link">Read Paper</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="paper-card">
+                <div class="paper-title">A DNN Based Driving Scheme for Anticipative Car Following Using Road-Speed Profile</div>
+                <div class="paper-authors">M. K. F. Isha, M. N. H. Shawon, M. Shamim, <b>M. N. Shakib</b>, M. Hashem, and M. A. S. Kamal</div>
+                <div class="paper-conference">2021 IEEE Intelligent Vehicles Symposium (IV), IEEE, 2021, pp. 496–501</div>
+                <a href="https://ieeexplore.ieee.org/document/9575314" class="paper-link">Read Paper</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="paper-card">
+                <div class="paper-title">Enhanced Road Lane Marking Detection System: A CNN-based Approach for Safe Driving</div>
+                <div class="paper-authors">M. R. Alom, T. A. Opi, H. I. Polak, <b>M. N. Shakib</b>, M. P. Hossain, and M. A. Rahaman</div>
+                <div class="paper-conference">2023 5th IEEE International Conference on Sustainable Technologies for Industry 5.0 (STI), IEEE, 2023. [Accepted]</div>
+                <a href="#paper3" class="paper-link">Read Paper (Not available yet)</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="paper-card">
+                <div class="paper-title">Enhanced Hamming Codes: Reducing Redundant Bit for Efficient Error Detection and Correction</div>
+                <div class="paper-authors">M. R. Alom, <b>M. N. Shakib</b>, and M. A. Rahaman</div>
+                <div class="paper-conference">2023 5th IEEE International Conference on Sustainable Technologies for Industry 5.0 (STI), IEEE, 2023. [Accepted]</div>
+                <a href="#paper4" class="paper-link">Read Paper (Not available yet)</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="lastUpdated">
+        Last Updated: <span id="lastUpdatedDate"></span>
+    </footer>
+
+    <script>
+        // Function to format the date as "15 November, 2023"
+        function formatDate(date) {
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            return new Intl.DateTimeFormat('en-US', options).format(date);
+        }
+
+        // Update the last updated date dynamically
+        document.getElementById("lastUpdatedDate").innerText = formatDate(new Date());
+    </script>
+
+</body>
+
+</html>
