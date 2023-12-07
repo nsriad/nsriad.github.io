@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 10;
+        padding: 10;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        /* Rounded corners */
+      }
+
+      .page-title {
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+        background-color: #5C6BC0;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .page-title:hover {
+        background-color: #3949AB;
+      }
+
+      section {
+        margin-bottom: 15px;
+      }
+
+      .rootskill-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .rootskill-card:hover {
+        transform: scale(1);
+      }
+
+      .rootskill-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .rootskill-details {
+        margin-bottom: 5px;
+        margin-top: 20px;
+      }
+
+      .rootskill-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .skills-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+
+      .skill-card {
+        flex: 1;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        text-align: center;
+        /* Center-align the skill card content */
+      }
+
+      .skill-card:hover {
+        transform: scale(1.02);
+      }
+
+      .skill-logo-container {
+        width: 100px;
+        height: 40px;
+        border-radius: 0%;
+        /* Make it a circle */
+        overflow: hidden;
+        margin: 0 auto 10px;
+        /* Center-align the logo */
+      }
+
+      .skill-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* Maintain image aspect ratio and cover entire container */
+      }
+
+      .skill-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .skill-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .progress-container {
+        width: 100%;
+        height: 10px;
+        background-color: #eee;
+        border-radius: 5px;
+        margin-bottom: 8px;
+      }
+
+      .progress-bar {
+        height: 100%;
+        border-radius: 5px;
+        background-color: #007BFF;
+        transition: width 0.5s ease-in-out;
+      }
+
+      .progress-bar:hover {
+        background-color: #0056b3;
+      }
+
+      .progress-text {
+        font-size: 12px;
+        margin-top: 4px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 10px;
+        }
+
+        .skills-container {
+          flex-direction: column;
+        }
+
+        .skill-card {
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <main>
+      <div class="page-title"> Skills </div>
+      <section>
+        <div class="rootskill-card">
+          
+          <!-- Root skill -->
+          <div class="rootskill-details">
+            <div class="rootskill-info">
+              <div class="rootskill-title">Programming Languages:</div>
+            </div>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Python</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <div class="progress-text">90%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">C</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="progress-text">80%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">C++</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="progress-text">85%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Java</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <div class="progress-text">90%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">PHP</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <div class="progress-text">60%</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Root skill 2 -->
+          
+          <div class="rootskill-details">
+            <div class="rootskill-info">
+              <div class="rootskill-title">Frameworks:</div>
+            </div>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Sci-kit learn Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Sci-kit learn</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+                <div class="progress-text">65%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Keras</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="progress-text">70%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Pandas</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="progress-text">80%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/TensorFlow_logo.svg" alt="Tensorflow Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">TensorFlow</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="progress-text">70%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" alt="SeaBorn Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">SeaBorn</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+                <div class="progress-text">65%</div>
+              </div>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://yellowbrick.com/wp-content/uploads/2022/04/yellowbrick-logo-horizontal-gray.svg" alt="YelloBrick Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">YellowBrick</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <div class="progress-text">60%</div>
+              </div>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Asp.net.svg" alt="asp.net Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">ASP.NET</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+                <div class="progress-text">75%</div>
+              </div>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Laravel</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="progress-text">70%</div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Root skill 3 -->
+          <div class="rootskill-details">
+            <div class="rootskill-info">
+              <div class="rootskill-title">Database:</div>
+            </div>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/de/d/dd/MySQL_logo.svg" alt="MySQL Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">MySQL</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="progress-text">85%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Oracle</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="progress-text">80%</div>
+              </div>
+            </div>
+          </div>
+            
+            <!-- Root skill 4 -->
+          <div class="rootskill-details">
+            <div class="rootskill-info">
+              <div class="rootskill-title">Operating System:</div>
+            </div>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Windows</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 95%;"></div>
+                </div>
+                <div class="progress-text">95%</div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Ubuntu_logo.svg" alt="Ubuntu Logo" class="skill-logo">
+              </div>
+              <div class="skill-details">
+                <div class="skill-name">Linux</div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="progress-text">70%</div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- Add more skills as needed -->
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Md. Nazmus Shakib</p>
+    </footer>
+
+  </body>
+
+</html>
