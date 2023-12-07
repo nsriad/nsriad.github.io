@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            margin: 10;
+            padding: 10;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        main {
+            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+           flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        .page-title {
+	    flex: 100%;
+            text-align: center; /* Center-align the title */
+            padding: 20px;
+	    font-size: 24px;
+            background-color: #5C6BC0; /* Accent color */
+            color: #fff; /* White text color */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .page-title:hover {
+            background-color: #3949AB; /* Darker shade on hover */
+        }
+
+        .left-container {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            transition: width 0.3s ease-in-out;
+            box-sizing: border-box; /* Add this line */
+        }
+
+        .left-container:hover {
+            width: 100%;
+        }
+
+        .profile-image-container {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            align-items: center;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .justified-text {
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center; /* Center-align the name */
+        }
+
+        .name:hover {
+            transform: scale(1.15);
+        }
+
+        .contact-logos {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-logo {
+            margin: 0 3px;
+            color: #3498DB; /* Accent color */
+            text-decoration: none;
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-logo:hover {
+            transform: scale(1.5);
+            color: #035a94;
+        }
+
+        .right-container {
+            flex: 4;
+            padding: 20px;
+            box-sizing: border-box; /* Add this line */
+        }
+
+        .introduction {
+            font-size: 18px;
+	    text-align: justify;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center; /* Center-align the footer */
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .left-container,
+            .right-container {
+                flex: 100%; /* Full width on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="page-title">Personal Overview</div>
+        <div class="left-container">
+            <div class="profile-image-container">
+                <img src="https://raw.githubusercontent.com/nsriad/public/main/raw%20300%20by%20300.png"
+                    alt="Profile Image" class="profile-image">
+            </div>
+            <div class="name">Md. Nazmus Shakib</div>
+            <div class="contact-logos">
+                <a href="https://www.linkedin.com/in/nazmus-shakib-riad/" target="_blank" class="contact-logo">
+                    <i class="fab fa-linkedin" title="LinkedIn"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=0ulwrwEAAAAJ&hl=en" target="_blank" class="contact-logo">
+                    <i class="fab fa-google" title="Google Scholar"></i>
+                </a>
+                <a href="mailto:mdnazmus.shakib.cse@gmail.com" class="contact-logo">
+                    <i class="fas fa-envelope" title="Email"></i>
+                </a>
+                <!-- Add more logos as needed -->
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="introduction">
+                <!-- Paste your detailed introduction here -->
+                <p>I am Md. Nazmus Shakib, currently serving as a Lecturer in the esteemed Department of Computer Science and Engineering at the Green University of Bangladesh. I bring a passion for academic excellence and a commitment to stimulating a dynamic learning environment for my students.</p>
+
+                <p>I completed my bachelor degree at Khulna University of Engineering & Technology (KUET), Khulna, Bangladesh in 2022. During my time at KUET, I pursued a rigorous course of study, emerging with a profound understanding of Computer Science and Engineering principles. I take pride in my consistent academic achievements, having been honored with the Dean's Award for three consecutive years spanning from the 2017-18 session to the 2019-20 session. This award shows my steadfast commitment to achieving academic excellence and my continuous pursuit of knowledge. In addition to my academic accomplishments, I have been fortunate to receive a government scholarship in recognition of my outstanding results at the primary, secondary, and higher secondary levels. This scholarship stands as a recognition of my commitment to scholarly pursuits and my ability to consistently excel in diverse academic domains.</p>
+
+                <p>My research interests encompass diverse areas within the realm of Computer Science and Engineering, notably focusing on machine learning, deep learning, data science, and intelligent vehicles. To date, I have successfully published two peer-reviewed articles in international conferences, with two more articles already accepted and awaiting publication. As an academic professional, I am committed to contributing to the academic community through research, publication, and active participation in academic forums. My aim is to make meaningful contributions to the field of Computer Science and Engineering while continuously evolving as an educator and researcher. My commitment lies in creating a supportive and intellectually engaging learning atmosphere. My teaching philosophy is centered around inspiring and guiding students to unlock their full potential, encouraging critical thinking, and instilling a lifelong love for learning.</p>
+
+                <p>Thank you for visiting my academic profile, and I look forward to engaging in meaningful academic endeavors and collaborations.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer>
+        <p>&copy; 2023 Md. Nazmus Shakib </p>
+</footer>
+</html>
