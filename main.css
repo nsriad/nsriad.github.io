@@ -7,12 +7,6 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #5C6BC0;
-    padding: 10px;
-    text-align: center;
-}
-
 main {
     display: flex;
     max-width: 800px;
