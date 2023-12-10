@@ -31,9 +31,15 @@ font-size: 24px;
 }
 
 header {
-    background-color: #5C6BC0;
-    padding: 10px;
+    background-color: #d6d6d6;
+    padding: 1px;
     text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .page-title:hover {
