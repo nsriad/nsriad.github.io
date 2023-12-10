@@ -1,0 +1,41 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    margin-top: 70px;
+    padding: 10;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+   flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.page-title {
+flex: 100%;
+    text-align: center; /* Center-align the title */
+    padding: 20px;
+font-size: 24px;
+    background-color: #5C6BC0; /* Accent color */
+    color: #fff; /* White text color */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    background-color: #5C6BC0;
+    padding: 10px;
+    text-align: center;
+}
+
+.page-title:hover {
+    background-color: #3949AB; /* Darker shade on hover */
+}
