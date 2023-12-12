@@ -30,18 +30,6 @@ font-size: 24px;
     transition: background-color 0.3s ease-in-out;
 }
 
-header {
-    background-color: #d6d6d6;
-    padding: 1px;
-    text-align: center;
-    border-radius: 5px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
 .page-title:hover {
     background-color: #3949AB; /* Darker shade on hover */
 }
