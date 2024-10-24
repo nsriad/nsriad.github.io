@@ -35,6 +35,20 @@
             transition: background-color 0.3s ease-in-out;
         }
 
+.iframe-container{
+	width: 100% ;
+	height: 100% ;
+	position: relative ;
+}
+.responsive-iframe{
+	width: 100% ;
+	height: 100% ;
+	border: none ;
+	position: absolute ;
+	top: 0 ;
+	left: 0;
+}
+
         .page-title:hover {
             background-color: #3949AB; /* Darker shade on hover */
         }
@@ -133,8 +147,8 @@
         <section>
             <div class="education-card">
                 <div class="education-info">
-                    <div class="education-details">
-                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrMMqugDJJ0fRY59pft4EeMzCLHjiaZB9wvW2c_0j-4vZu2py1ZMHhQnANCrz4bj6l4by4VkRmf0Je/pubhtml?gid=1510069356&amp;single=true&amp;widget=true&amp;headers=false" class="main"></iframe>
+                    <div class="iframe-container">
+                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrMMqugDJJ0fRY59pft4EeMzCLHjiaZB9wvW2c_0j-4vZu2py1ZMHhQnANCrz4bj6l4by4VkRmf0Je/pubhtml?gid=1510069356&amp;single=true&amp;widget=true&amp;headers=false" class="responsive-iframe"></iframe>
                     </div>
                 </div>
             </div>
